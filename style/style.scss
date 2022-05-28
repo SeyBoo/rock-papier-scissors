@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background:radial-gradient(hsl(214, 47%, 23%),hsl(237, 49%, 15%));
+    background-repeat: no-repeat;    
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+@import "modals", "main";

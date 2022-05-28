@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/style/style.css">
+
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+ 
+</head>
+<body>
+  <div class="modal_wrapper">
+    <section class="modal">
+      <div class="modal-title"> 
+        <h1>Rules</h1>
+      </div>
+      <div class="modal-rules" style="background-image: url(/images/image-rules.svg);"></div>
+      <div class="modal-close" style="background-image: url(/images/icon-close.svg);"></div>
+    </section>
+  </div>
+
+  <section class="main">
+    <div class="title">
+      <div class="game-illustration">
+        <img src="/images/logo.svg" alt="#">
+      </div>
+      <div class="game-score">
+        <h4>Score</h4>
+        <p class="point">0</p>
+      </div>
+    </div>
+    <section class="game">
+      <div class="game-option">
+        <div class="game-button" id="paper">
+          <div class="icon-bg">
+            <img src="/images/icon-paper.svg" alt="#">
+          </div>
+        </div>
+        <div class="game-button" id="scissors">
+          <div class="icon-bg">
+            <img src="/images/icon-scissors.svg" alt="#">
+          </div>
+        </div>
+        <div class="game-button rock" id="rock">
+          <div class="icon-bg">
+            <img src="/images/icon-rock.svg" alt="#">
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="game_inner">
+        <div class="game_pick">
+          <div class="pick player_pick">
+            <div class="result player_result"></div>
+            <h3>You Picked</h3>
+          </div>
+          <div class="pick house_pick">
+            <div class="result house_result"></div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                </div>
+                <div class="flip-card-back">
+                </div>
+              </div>
+            </div>
+            <h3>The House Picked</h3>
+          </div>
+        </div>
+        <div class="game_result">
+          <h3 class="game-win">You Win</h3>
+          <h3 class="game-loose">You Lose</h3>
+          <h3 class="game-equal">Draw</h3>
+          <button class="more">Play Again</button>
+        </div>
+      </div>
+    </section>
+    
+    <div class="game_rules">
+      <button class="rules">Rules</button>
+    </div>
+  </section>
+
+  
+  
+  <script src="/js/script.js"></script>
+</body>
+</html>

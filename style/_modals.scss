@@ -1,0 +1,108 @@
+@keyframes modal {
+    0% {margin-top: 50rem;}
+}
+
+.modal_wrapper {
+    animation-name: modal;
+    animation-duration: 2s;
+    display: none;
+}
+
+.modal {
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(242, 246, 250);
+}
+
+.modal h1 {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    color:hsl(229, 25%, 31%);
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.modal-rules {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    height: 80vw;
+}
+
+.modal-close {
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1.25rem;
+    height: 1.25rem;
+    cursor: pointer;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -50%);
+}
+
+@media (min-width:768px) {
+    
+    .modal_wrapper {
+        animation-name: none;
+    }
+
+    .modal {
+        height:30rem;
+        width: 27.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center ;
+        flex-wrap: wrap;
+        padding: 2rem 3rem;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        animation-name: identifier;
+        animation-duration: 3s;
+}
+
+    .modal_wrapper {
+        background-color: rgba(0,0,0,0.1);
+        width: 100%;
+        height: 100%;
+    }
+
+    .modal h1 {
+        text-align: initial;
+        margin: 0;
+    }
+
+    .modal-tile {
+        order: 1;
+    }
+
+    .modal-rules {
+        order: 3;       
+    }
+
+    .modal-close {
+        order: 2;
+        margin: 0;
+    }
+
+    .modal-rules {
+        background-size: contain;
+        flex-basis: 100%;
+        margin-top: 2rem;
+    }
+}
